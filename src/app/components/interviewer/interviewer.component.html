@@ -1,0 +1,25 @@
+<div>
+    <div *ngIf="!speaking">
+        <lottie-player
+        #lottiePlayer
+        src="https://lottie.host/08308e0c-d3dc-4493-831d-76698519f6fc/JuRRUjDEhK.json"
+        background="transparent"
+        speed="0.4"
+        style="width: 300px; height: 300px"
+        >
+        </lottie-player>
+    </div>
+    <div *ngIf="speaking">
+        <lottie-player
+        #lottiePlayer
+        src="https://lottie.host/08308e0c-d3dc-4493-831d-76698519f6fc/JuRRUjDEhK.json"
+        background="transparent"
+        speed="0.4"
+        style="width: 300px; height: 300px"
+        autoplay
+        loop
+        >
+        </lottie-player>
+    </div>
+    <button (click)="speak('Hello, I am your AI interviewer')">Speak</button>
+</div>
