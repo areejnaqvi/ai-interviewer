@@ -1,1 +1,8 @@
-<p>speech-input works!</p>
+<div>
+    <button (click)="startRecording()">Start Recording</button>
+    <div *ngIf="transcript">
+        <h3>Transcript</h3>
+        <p>{{ transcript }}</p>
+    </div>
+</div>
+  
