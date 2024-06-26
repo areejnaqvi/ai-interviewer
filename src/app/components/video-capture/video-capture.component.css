@@ -1,0 +1,23 @@
+video {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c86ee;
+}
+
+.video-box {
+  padding-top: 1rem;
+  /* padding-bottom: 1rem; */
+}

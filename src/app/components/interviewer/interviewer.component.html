@@ -1,0 +1,33 @@
+<div class="app">
+  <div *ngIf="!interviewComplete">
+    <div class="job-listing" *ngIf="generatedQuestions.length === 0">
+      <label for="jobListing"><h3>Job Title:</h3></label>
+      <input id="jobListing" [(ngModel)]="jobListing" />
+      <button (click)="generateQuestions()">Generate Questions</button>
+    </div>
+    <div *ngIf="generatedQuestions.length > 0">
+      <div class="question" *ngIf="currentQuestion">
+        <h5>{{ currentQuestion }}</h5>
+        <app-speech-input
+          #speechInputComponent
+          (transcriptEvent)="handleTranscription($event)"
+        ></app-speech-input>
+      </div>
+      <!-- Code to speak, convert speech to text, and send to api -->
+    </div>
+  </div>
+  <div class="feedback-container" *ngIf="interviewComplete">
+    <div class="thankyou-heading">
+      <h3>Thank you for your time!</h3>
+    </div>
+    <div class="thankyou-text">
+      <h4>Please keep an eye out on your email for next steps.</h4>
+    </div>
+    <div *ngIf="feedbackLoaded" class="feedback">
+      <button (click)="toggleShowFeedback()">Show Feedback</button>
+      <div class="feedback-text" *ngIf="showFeedback">
+        <h4>{{ feedback }}</h4>
+      </div>
+    </div>
+  </div>
+</div>

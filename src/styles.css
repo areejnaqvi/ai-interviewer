@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Choose a modern sans-serif font */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-listing {
+  margin-bottom: 20px;
+}
+
+.job-listing label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.job-listing input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.job-listing button {
+  padding: 10px 20px;
+  background-color: #333; /* Dark gray background */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-listing button:hover {
+  background-color: #555; /* Darker gray on hover */
+}
+
+.question {
+  /* padding: 20px; */
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.question h5 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback button:hover {
+  background-color: #555;
+}
+
+.feedback-container {
+  /* background-color: #222; Dark background for questions */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.feedback-text {
+  color: #b3b3b3;
+}
+
+.tex {
+  font-style: italic;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+video {
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+canvas {
+  display: none;
+}
