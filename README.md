@@ -1,27 +1,33 @@
-# AiInterviewer
+# AI Interviewer Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+Welcome to the frontend repository for AI Interviewer, a web application designed to assist in conducting interviews using AI.
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This AI interviewer's frontend is built using modern web technologies to provide an intuitive and responsive user interface for both interviewers and interviewees. It interacts with the backend service to generate interview questions, capture interviewee responses, and provide feedback based on AI analysis. 
 
-## Code scaffolding
+Run the backend and frontend servers for the AI interviewer and input the job title (or job listing) that you would like to interview for. Then answer the AI's questions and wait for it's feedback on your responses.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Interview for any job**: Provide any job title or listing for the interview.
+- **Generate Questions**: Automatically generate interview questions based on provided job listing.
+- **Capture Interview Responses**: Capture video, audio, and text responses from interviewees.
+- **Follow up Questions**: Answer follow up questions based on your responses
+- **Feedback and Analysis**: Receive AI-generated feedback and analysis on responses.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+To run the frontend locally, follow these steps. Note that the frontend must run on port 4200 and the backend must run on port 5000 in order to avoid any errors.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd frontend
+2. **Install Dependencies**:
+   ```bash
+   npm install
+3. **Run the Application**:
+   ```bash
+   npm run start
+   
